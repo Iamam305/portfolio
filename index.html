@@ -1,317 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.8.3/dist/paper.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Ajitesh Mishra</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- <nav> -->
 
-<!-- <nav> -->
-    <header class="p-4 fixed   shadow-md w-full bg-gray-800  text-gray-100">
-        <div class="container flex justify-between h-16 mx-auto">
-            <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2  font-bold text-4xl font-mono text-orange-500">
-                AM
-            </a>
-            <ul class="items-stretch hidden space-x-3 md:flex">
-                <li class="flex">
-                    <a rel="noopener noreferrer" href="#project" class="flex items-center px-4 -mb-1 border-b-2  border-transparent hover:text-orange-500  hover:border-orange-500">Projects</a>
-                </li>
-                <li class="flex">
-                    <a rel="noopener noreferrer" href="#contact" class="flex items-center px-4 -mb-1 border-b-2  border-transparent hover:text-orange-500  hover:border-orange-500">Contact</a>
-                </li>
-                <li class="flex">
-                    <a rel="noopener noreferrer" href="https://www.linkedin.com/in/ajitesh-mishra-764235211/" target="_blank" class="flex items-center px-4 -mb-1 border-b-2  border-transparent  hover:text-orange-500  hover:border-orange-500">Linkedin</a>
-                </li>
-                <li class="flex">
-                    <a rel="noopener noreferrer" href="https://twitter.com/Iamam305" target="_blank" class="flex items-center px-4 -mb-1 border-b-2  border-transparent hover:text-orange-500  hover:border-orange-500">Twitter</a>
-                </li>
-            </ul>
-            <button class="flex justify-end p-4 md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+    <nav class="border split-nav">
+      <div class="nav-brand">
+        <h3><a href="/">AJITESH MIAHRA</a></h3>
+      </div>
+      <div class="collapsible">
+        <input id="collapsible1" type="checkbox" name="collapsible1" />
+        <label for="collapsible1">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </label>
+        <div class="collapsible-body">
+          <ul class="inline">
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/Iamam305" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/ajitesh-mishra-764235211/" target="_blank">Linkedin</a></li>
+
+          </ul>
         </div>
-    </header>
-
-<!-- </nav> -->
-
-
+      </div>
+    </nav>
+    <!-- </nav> -->
 
     <!-- hero -->
-    <section class=" pt-16 md:pt-4 flex justify-center bg-gray-800 h-screen text-gray-100">
-        <div class="container mx-auto flex flex-col items-center justify-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:w-4xl">
-            <h1 class="text-4xl font-bold leading-none sm:text-5xl">Namaste 🙏 I am
-                <span class=" text-orange-500">Ajitesh Mishra</span> <br> a Frontend Developer 🎨  and <br> startup enthusiast
-
-            </h1>
-            <!-- <p class="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p> -->
-            <div class="flex flex-wrap justify-center mt-8">
-                <button class="px-8 py-3 m-2 text-lg font-semibold rounded  bg-orange-500  text-gray-100"> <a href  ="#contact">Contact Me</a>  </button>
-                <button class="px-8 py-3 m-2 text-lg border rounded  text-gray-50  border-gray-700"> <a href  ="#project"> Browse Projects</a></button>
-            </div>
+    <section
+      class="margin-top-large padding-bottom-large padding-top-large pt-16 md:pt-4 flex justify-center bg-gray-800 h-screen text-gray-100"
+    >
+      <div
+        class="container mx-auto flex flex-col items-center justify-center px-4 py-16 text-center md:py-32 md:px-10 lg:px-32 xl:w-4xl"
+      >
+        <h1 class="text-4xl font-bold leading-none sm:text-5xl">
+          Namaste 🙏 I am <span class="text-orange-500">Ajitesh Mishra</span>
+          <br />
+          a Frontend Developer 🎨 and <br />
+          startup enthusiast
+        </h1>
+        <!-- <p class="px-8 mt-8 mb-12 text-lg">Cupiditate minima voluptate temporibus quia? Architecto beatae esse ab amet vero eaque explicabo!</p> -->
+        <div class="flex flex-wrap justify-center mt-8">
+          <button
+            class="paper-btn px-8 py-3 m-2 text-lg font-semibold rounded bg-orange-500 text-gray-100"
+          >
+            <a href="#contact">Contact Me</a>
+          </button>
+          <button
+            class="px-8 py-3 m-2 text-lg border rounded text-gray-50 border-gray-700"
+          >
+            <a href="#project"> Browse Projects</a>
+          </button>
         </div>
+      </div>
     </section>
 
-<hr>
+    <hr />
     <!-- Projects  -->
 
-    <section class="py-6 sm:py-12  bg-gray-800  text-gray-100">
-        <div class="container p-6 mx-auto space-y-8">
-            <div class="space-y-2 text-center">
-                <h2 class="text-3xl font-bold">Projects that I have worked on</h2>
-                
+    <div class="container-md padding-large" id="project">
+      <h2 class="text-3xl font-bold">Projects that I have worked on</h2>
+      <div class="row">
+        <div class="col-4 col " style="min-width: 20rem; ">
+          <div class="card">
+            <img
+              src="https://iili.io/Q8qU0u.md.png"
+              alt="Card example image"
+              style="object-fit: cover;"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Netive</h4>
+            
+              <p class="card-text">
+                no code app development tool
+              </p>
+              <button> <a href="https://netive.tech/">Live site</a> </button>
+              <button><a href="https://github.com/Iamam305/netive-shopify">Github</a></button>
+
             </div>
-            <div id="project" class="grid grid-cols-1 gap-x-6 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/Kq9LB84/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Netive</h2>
-                            <p>no code app development tool</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/netive-shopify" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://app.netive.tech/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/hFrLP7L/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Earningway (react)</h2>
-                            <p>conversation of a bloging website into react app using wp rest api</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/earning-ways-react" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://earninggway.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/nfCRYwq/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Chative</h2>
-                            <p>Realtime chatroom built with next js and firebase</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <!-- <a  target="_blank" href  ="https://github.com/Iamam305/earning-ways-react" class="text-2xl"><i class="fa-brands fa-github"></i></a>  -->
-                            <a  target="_blank" href  ="https://chative.vercel.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/h7QHsY2/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Calculator</h2>
-                            <p>Calculator build with react and tailwind</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/react-calculator-" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://recalct.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://iili.io/QORcwx.md.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Aggrant</h2>
-                            <p>Free learning resources to learn frontend development in hindi</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/aggrant" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://aggrant.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/xJNCNH0/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">DR. NANDAN MISHRA</h2>
-                            <p>Astrologer and vastu expert</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/NANDAN-MISHRA" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://drnandanmishra.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://iili.io/Q57rJf.md.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Realtor Phil Dunphy</h2>
-                            <p>Real estate website that show properties avilable to buy and rent in dubai</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/reunionhq-test" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://phildunphy.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/QX7M8Z4/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Cranky Flier</h2>
-                            <p>conversation of a bloging website into react app using wp rest api</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/cranky-react" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://crankyflier.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/pvNzwYS/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Addwisely</h2>
-                            <p>Random quotes genrator build with react and tailwind</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/addWise" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://addwisely.netlify.app/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/wMH8xYV/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Creative Space Interior</h2>
-                            <p>Interior designer based on prayagraj india</p> 
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Vavecorp/creativespace" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://creativespaceinterior.com/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/MB83mdN/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Frequency Expanse</h2>
-                            <!-- <p>Random quotes genrator build with react and tailwind</p>  -->
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Vavecorp/frequency-master" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://vavecorp.github.io/frequency-master/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-
-                <article class="flex flex-col  bg-gray-900">
-                    <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                        <img alt="" class="object-fill w-full h-52  bg-gray-500" src="https://i.ibb.co/D5JHbqX/image.png">
-                    </a>
-                    <div class="flex justify-between items-center flex-1 p-6">
-                        <span class="w-4/5">
-                            <h2 class="text-orange-500 text-xl font-bold">Caja Huancayo</h2>
-                            <!-- <p>Random quotes genrator build with react and tailwind</p>  -->
-                        </span>
-                        <span class="w-1/5 flex justify-between ml-2">
-                            <a  target="_blank" href  ="https://github.com/Iamam305/cuanhuancayo" class="text-2xl"><i class="fa-brands fa-github"></i></a> 
-                            <a  target="_blank" href  ="https://iamam305.github.io/cuanhuancayo/" class="text-2xl"><i class="fa-solid fa-link"></i></a> 
-                        </span>
-
-                    </div>
-                </article>
-                
-               
-            </div>
+          </div>
         </div>
-    </section>
 
-    <hr>
+        <div class="col-4 col" style="min-width: 20rem; ">
+          <div class="card">
+            <img
+              src="https://i.ibb.co/hFrLP7L/image.png"
+              alt="Card example image"
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Earningway (react)</h4>
+            
+              <p class="card-text">
+                conversation of a bloging website into react app using wp rest api
+              </p>
+              <button> <a href="https://earninggway.netlify.app/">Live site</a> </button>
+              <button><a href="https://github.com/Iamam305/earning-ways-react">Github</a></button>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://iili.io/Q8qQWP.md.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Chative</h4>
+            
+              <p class="card-text">
+                Realtime chatroom built with next js and firebase 
+              </p>
+              <button> <a href="https://chative.vercel.app/">Live site</a> </button>
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://i.ibb.co/h7QHsY2/image.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Calculator</h4>
+            
+              <p class="card-text">
+                Calculator build with react and tailwind
+              </p>
+              <button> <a href="https://recalct.netlify.app/">Live site</a> </button>
+              <button> <a href="https://github.com/Iamam305/react-calculator-">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://iili.io/QORcwx.md.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Aggrant</h4>
+            
+              <p class="card-text">
+                Free learning resources to learn frontend development in hindi
+              </p>
+              <button> <a href="https://aggrant.netlify.app/">Live site</a> </button>
+              <button> <a href="https://github.com/Iamam305/aggrant">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+       
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://iili.io/Q57rJf.md.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Realtor Phil Dunphy</h4>
+            
+              <p class="card-text">
+                Real estate website that show properties avilable to buy and rent in dubai
+              </p>
+              <button> <a href="https://phildunphy.netlify.app/">Live site</a> </button>
+              <button> <a href="https://github.com/Iamam305/reunionhq-test">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://iili.io/Q8oXBS.md.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Cranky Flier</h4>
+            
+              <p class="card-text">
+                conversation of a bloging website into react app using wp rest api
+              </p>
+              <button> <a href="https://crankyflier.netlify.app/">Live site</a> </button>
+              <button> <a href="https://github.com/Iamam305/cranky-react">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://iili.io/Q8xOPI.md.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Creative Space Interior</h4>
+            
+              <p class="card-text">
+                Interior designer based on prayagraj india
+              </p>
+              <button> <a href="https://creativespaceinterior.com/">Live site</a> </button>
+              <button> <a href="https://github.com/Vavecorp/creativespace">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://iili.io/Q8zJVV.md.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Caja Huancayo</h4>
+            
+              <!-- <p class="card-text">
+                Interior designer based on prayagraj india
+              </p> -->
+              <button> <a href="https://iamam305.github.io/cuanhuancayo/">Live site</a> </button>
+              <button> <a href="https://github.com/Iamam305/cuanhuancayo">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 col" style="min-width: 20rem;">
+          <div class="card" >
+            <img
+              src="https://i.ibb.co/MB83mdN/image.png"
+              alt="Card example image"
+              
+            />
+
+            <div class="card-body">
+              <h4 class="card-title">Frequency Expanse</h4>
+            
+              <p class="card-text">
+                Astrologer and vastu expert
+              </p>
+              <button> <a href="https://vavecorp.github.io/frequency-master/">Live site</a> </button>
+              <button> <a href="https://github.com/Vavecorp/frequency-master">Github</a> </button>
+
+             
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <hr />
 
     <!-- contact  -->
 
-    <section class="py-20    bg-gray-800   text-gray-50">
-        
-        <div id="contact" class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-            <div class="py-6  md:py-0 md:px-6">
-                <h1 class="text-4xl font-bold">Get in touch</h1>
-                <p class="pt-2 pb-4">Fill in the form to start a conversation</p>
-                <div class="space-y-4">
-                   
-                    <p class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        <span>ajiteshm141@gmail.com</span>
-                    </p>
-                </div>
-            </div>
-            <form action="https://formsubmit.co/1958ba7dba2cbdd2ef425845be370067" method="POST" novalidate="" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ">
-                <label class="block">
-                    <span class="mb-1">Full name</span>
-                    <input type="text" name="name" placeholder="Leroy Jenkins" class="block border-white  border-2  p-4 mt-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-orange-500   bg-gray-800">
-                </label>
-                <label class="block">
-                    <span class="mb-1">Email address</span>
-                    <input type="email" name="email" placeholder="leroy@jenkins.com" class="block border-white  border-2  p-4 mt-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-orange-500   bg-gray-800">
-                </label>
-                <label class="block">
-                    <span class="mb-1">Message</span>
-                    <textarea rows="3" name="message" class="block border-white  border-2  p-4 mt-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-orange-500   bg-gray-800"></textarea>
-                </label>
-                <button type="submit" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75   bg-orange-500   text-gray-900 focus:ring-orange-500 hover:ring-orange-500">Submit</button>
-            </form>
+    <div class="padding-large container-sm">
+      <h2>Contact me</h2>
+
+      <form
+        action="https://formsubmit.co/1958ba7dba2cbdd2ef425845be370067"
+        method="POST"
+      >
+    
+
+      <div class="row" id="contact" style="justify-content: center;">
+        <div class="col sm-4">
+          <div class="form-group">
+            <label for="paperInputs2">NAME</label>
+            <input name="name" class="input-block" type="text" id="paperInputs2">
+          </div>
         </div>
-    </section>
-</body>
-</html> 
+
+        <div class="col sm-4">
+          <div class="form-group">
+            <label for="paperInputs2">EMAIL</label>
+            <input name="email" class="input-block" type="email" id="paperInputs2">
+          </div>
+        </div>
+        <div class="col sm-8">
+          <label for="large-input">Message</label>
+          <textarea name="message" style="width: 100%; height: 300px;" id="large-input" placeholder="Your Message"></textarea>
+        </div>
+        <button class="col sm-8" type="submit">Submit</button>
+      </div>
+
+    </form>
+    </div>
+
+  
+  </body>
+</html>
